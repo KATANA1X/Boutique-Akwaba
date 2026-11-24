@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Le Petit Bonheur, votre boutique d’articles variés : décoration, cuisine, papeterie, accessoires et jeux. Des trouvailles choisies avec soin, en ligne et en magasin.">
+  <meta name="theme-color" content="#173f38">
+  <title>Le Petit Bonheur — De jolies trouvailles pour tous les jours</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="icon-truck" viewBox="0 0 24 24"><path d="M3 6h11v11H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.2 2.2 4.8-5"/></symbol>
+    <symbol id="icon-return" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1.5 7M4 4v6h6"/></symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.4 5.4 0 0 0-7.6 0L12 5.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6L12 21l8.8-8.8a5.4 5.4 0 0 0 0-7.6z"/></symbol>
+    <symbol id="icon-sparkles" viewBox="0 0 24 24"><path d="M12 3l1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L5 10l5.3-1.7zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
+    <symbol id="icon-store" viewBox="0 0 24 24"><path d="M4 10v10h16V10M3 10l2-6h14l2 6"/><path d="M3 10c0 2 2 3 4.5 3S12 12 12 10c0 2 2 3 4.5 3S21 12 21 10M9 20v-6h6v6"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-4-2-2 2c-3-1.3-5.7-4-7-7l2-2z"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9z"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M16 16l5 5"/></symbol>
+    <symbol id="icon-bag" viewBox="0 0 24 24"><path d="M5 8h14l1 13H4zM9 9V6a3 3 0 0 1 6 0v3"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="icon-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="icon-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 14h10l1-14M10 11v6M14 11v6"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="M5 12l4 4L19 6"/></symbol>
+    <symbol id="icon-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="5"/><path d="M5 13v8h14v-8M12 8v13M12 8H8a3 3 0 1 1 3-3zM12 8h4a3 3 0 1 0-3-3z"/></symbol>
+    <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M20 4C9 3 4 8 5 14c1 6 9 7 13 2 3-4 2-12 2-12zM4 21c3-6 7-9 12-12"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".7" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M14 21v-8h3l.5-3H14V8c0-1 .3-2 2-2h2V3h-3c-3 0-5 2-5 5v2H7v3h3v8z"/></symbol>
+  </svg>
+
+  <div class="announcement">
+    <div class="container announcement-inner">
+      <span>Les petits riens font les grands bonheurs.</span>
+      <span><svg class="icon"><use href="#icon-truck"></use></svg> Livraison offerte dès 50 €</span>
+    </div>
+  </div>
+
+  <!-- En-tête : logo, navigation et accès au panier -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#accueil" aria-label="Le Petit Bonheur, accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M24 7v6M24 35v6M7 24h6M35 24h6M12 12l4 4M32 32l4 4M36 12l-4 4M16 32l-4 4"/><circle cx="24" cy="24" r="9"/><path d="M20 25c2 3 6 3 8 0"/></svg>
+        </span>
+        <span class="brand-text">Le Petit <strong>Bonheur</strong><small>articles & jolies choses</small></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <a href="#accueil" class="active">Accueil</a>
+        <a href="#boutique">La boutique</a>
+        <a href="#categories">Nos univers</a>
+        <a href="#engagements">Nos engagements</a>
+        <a href="#magasin">Le magasin</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button header-search" type="button" aria-label="Rechercher un article" data-open-search>
+          <svg class="icon"><use href="#icon-search"></use></svg>
+        </button>
+        <button class="icon-button cart-trigger" type="button" aria-label="Ouvrir le panier" data-open-cart>
+          <svg class="icon"><use href="#icon-bag"></use></svg>
+          <span class="cart-count" data-cart-count>0</span>
+        </button>
+        <button class="icon-button menu-trigger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+          <svg class="icon"><use href="#icon-menu"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <!-- Section 1 : Accueil et présentation de la boutique -->
+    <section class="hero" id="accueil" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> La boutique qui fait sourire</p>
+          <h1 id="hero-title">De jolies trouvailles, pour tous vos <em>petits bonheurs.</em></h1>
+          <p class="hero-description">Des objets utiles, originaux et choisis avec le cœur. À offrir, à s’offrir ou simplement à aimer au quotidien.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#boutique">Découvrir la boutique <svg class="icon"><use href="#icon-arrow-right"></use></svg></a>
+            <a class="button button-secondary" href="#magasin"><svg class="icon"><use href="#icon-store"></use></svg> Visiter le magasin</a>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true"><span>CM</span><span>SL</span><span>AD</span><span>+</span></div>
+            <div><div class="stars" aria-label="Note de 4,9 sur 5">★★★★★ <strong>4,9/5</strong></div><p>Plus de 1 200 clients déjà conquis</p></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrap">
+            <img src="assets/hero-boutique.jpg" alt="Sélection de tasses, carnet, bougie, tote bag et fleurs dans une ambiance lumineuse" width="1024" height="1280" fetchpriority="high">
+          </div>
+          <div class="floating-note floating-note-top"><span class="note-icon"><svg class="icon"><use href="#icon-sparkles"></use></svg></span><span><strong>Choisi avec soin</strong><small>De belles choses, simplement.</small></span></div>
+          <div class="floating-note floating-note-bottom"><span class="note-icon note-icon-coral"><svg class="icon"><use href="#icon-heart"></use></svg></span><span><strong>Petits prix</strong><small>Grands sourires garantis.</small></span></div>
+          <svg class="hero-squiggle" viewBox="0 0 90 70" aria-hidden="true"><path d="M5 55C20 20 35 15 40 35s25 25 40-10"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 : Garanties et réassurance -->
+    <section class="trust-section" aria-label="Nos garanties">
+      <div class="container trust-grid">
+        <div class="trust-item"><span class="trust-icon"><svg class="icon"><use href="#icon-shield"></use></svg></span><div><strong>Paiement sécurisé</strong><span>Payez en toute tranquillité</span></div></div>
+        <div class="trust-item"><span class="trust-icon"><svg class="icon"><use href="#icon-truck"></use></svg></span><div><strong>Livraison soignée</strong><span>Offerte dès 50 € d’achat</span></div></div>
+        <div class="trust-item"><span class="trust-icon"><svg class="icon"><use href="#icon-return"></use></svg></span><div><strong>Retours faciles</strong><span>30 jours pour changer d’avis</span></div></div>
+        <div class="trust-item"><span class="trust-icon"><svg class="icon"><use href="#icon-heart"></use></svg></span><div><strong>Conseils humains</strong><span>Une équipe à votre écoute</span></div></div>
+      </div>
+    </section>
+
+    <!-- Section 3 : Univers de produits -->
+    <section class="section categories-section" id="categories" aria-labelledby="categories-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">À chacun son univers</p><h2 id="categories-title">Il y en a pour tous les goûts.</h2></div>
+          <a class="text-link" href="#boutique">Tout voir <svg class="icon"><use href="#icon-arrow-right"></use></svg></a>
+        </div>
+        <div class="category-grid">
+          <button class="category-card category-home reveal" type="button" data-category="maison" style="--card-color:#e8eee2">
+            <span class="category-image"><img src="assets/bougie-figue-douce.jpg" alt="Bougie parfumée verte" width="1024" height="1024" loading="lazy"></span>
+            <span class="category-copy"><strong>Maison & déco</strong><small>Un intérieur qui vous ressemble</small><span class="category-arrow"><svg class="icon"><use href="#icon-arrow-right"></use></svg></span></span>
+          </button>
+          <button class="category-card category-kitchen reveal" type="button" data-category="cuisine" style="--card-color:#f8e6dc">
+            <span class="category-image"><img src="assets/tasse-bonjour.jpg" alt="Tasse corail et soucoupe jaune" width="1024" height="1024" loading="lazy"></span>
+            <span class="category-copy"><strong>Cuisine & café</strong><small>Les pauses qui font du bien</small><span class="category-arrow"><svg class="icon"><use href="#icon-arrow-right"></use></svg></span></span>
+          </button>
+          <button class="category-card category-paper reveal" type="button" data-category="papeterie" style="--card-color:#f8edc9">
+            <span class="category-image"><img src="assets/carnet-jolies-idees.jpg" alt="Carnet jaune et stylo vert" width="1024" height="1024" loading="lazy"></span>
+            <span class="category-copy"><strong>Papeterie créative</strong><small>Pour toutes vos jolies idées</small><span class="category-arrow"><svg class="icon"><use href="#icon-arrow-right"></use></svg></span></span>
+          </button>
+          <button class="category-card category-play reveal" type="button" data-category="loisirs" style="--card-color:#e1ebed">
+            <span class="category-image"><img src="assets/jeu-petits-bonheurs.jpg" alt="Jeu de société familial aux couleurs vives" width="1024" height="1024" loading="lazy"></span>
+            <span class="category-copy"><strong>Jeux & loisirs</strong><small>Des moments à partager</small><span class="category-arrow"><svg class="icon"><use href="#icon-arrow-right"></use></svg></span></span>
+          </button>
+          <button class="category-card category-bag reveal" type="button" data-category="accessoires" style="--card-color:#f0e7dc">
+            <span class="category-image"><img src="assets/tote-au-marche.jpg" alt="Tote bag en toile imprimée agrumes" width="1024" height="1024" loading="lazy"></span>
+            <span class="category-copy"><strong>Accessoires</strong><small>Les détails qui changent tout</small><span class="category-arrow"><svg class="icon"><use href="#icon-arrow-right"></use></svg></span></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 : Catalogue, filtres et recherche -->
+    <section class="section products-section" id="boutique" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-heading products-heading reveal">
+          <div><p class="eyebrow">Une sélection qui fait plaisir</p><h2 id="products-title">Nos coups de cœur du moment.</h2><p>Des pièces aussi agréables à offrir qu’à garder pour soi.</p></div>
+          <span class="handwritten">À découvrir sans hésiter !</span>
+        </div>
+
+        <div class="shop-toolbar">
+          <div class="filters" aria-label="Filtrer les produits par univers">
+            <button class="filter-button active" type="button" data-filter="tous" aria-pressed="true">Tout voir</button>
+            <button class="filter-button" type="button" data-filter="maison" aria-pressed="false">Maison</button>
+            <button class="filter-button" type="button" data-filter="cuisine" aria-pressed="false">Cuisine</button>
+            <button class="filter-button" type="button" data-filter="papeterie" aria-pressed="false">Papeterie</button>
+            <button class="filter-button" type="button" data-filter="loisirs" aria-pressed="false">Loisirs</button>
+            <button class="filter-button" type="button" data-filter="accessoires" aria-pressed="false">Accessoires</button>
+          </div>
+          <label class="search-field"><svg class="icon"><use href="#icon-search"></use></svg><span class="sr-only">Rechercher un produit</span><input type="search" id="product-search" placeholder="Une petite envie ?" autocomplete="off"></label>
+        </div>
+
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <svg class="icon"><use href="#icon-search"></use></svg>
+          <h3>Aucune trouvaille par ici…</h3>
+          <p>Essayez un autre mot ou affichez toute la boutique.</p>
+          <button class="button button-secondary" type="button" id="reset-filters">Voir tous les produits</button>
+        </div>
+        <p class="results-summary" id="results-summary" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- Section 5 : Engagements de la boutique -->
+    <section class="values-section section" id="engagements" aria-labelledby="values-title">
+      <div class="container values-inner">
+        <div class="values-heading reveal"><p class="eyebrow eyebrow-light">Acheter malin, choisir avec le cœur</p><h2 id="values-title">Des achats qui font du bien,<br><em>tout simplement.</em></h2><p>Parce qu’une belle boutique, c’est aussi une façon de consommer plus attentive et plus joyeuse.</p></div>
+        <div class="values-grid">
+          <article class="value-card reveal"><span class="value-icon"><svg class="icon"><use href="#icon-leaf"></use></svg></span><span class="value-number">01</span><h3>Moins, mais mieux</h3><p>Des produits durables et utiles, sélectionnés pour vous accompagner longtemps.</p></article>
+          <article class="value-card value-card-highlight reveal"><span class="value-icon"><svg class="icon"><use href="#icon-heart"></use></svg></span><span class="value-number">02</span><h3>Des partenaires passionnés</h3><p>Nous privilégions les créateurs et les petites séries, avec des histoires à raconter.</p></article>
+          <article class="value-card reveal"><span class="value-icon"><svg class="icon"><use href="#icon-gift"></use></svg></span><span class="value-number">03</span><h3>Le plaisir d’offrir</h3><p>Des idées pour toutes les occasions, avec un emballage préparé avec soin.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6 : Présentation et visite du magasin -->
+    <section class="section store-section" id="magasin" aria-labelledby="store-title">
+      <div class="container store-grid">
+        <div class="store-image reveal">
+          <img src="assets/interieur-magasin.jpg" alt="Intérieur lumineux du magasin Le Petit Bonheur avec des étagères de produits colorés" width="1536" height="1024" loading="lazy">
+          <div class="store-sticker"><svg class="icon"><use href="#icon-sparkles"></use></svg><span>Venez flâner,<br><strong>on vous attend !</strong></span></div>
+        </div>
+        <div class="store-copy reveal">
+          <p class="eyebrow">Un vrai magasin, de vrais conseils</p>
+          <h2 id="store-title">Ici, on prend le temps de vous conseiller.</h2>
+          <p>Envie de toucher, comparer ou simplement papoter ? Poussez la porte de notre boutique. Notre équipe connaît chaque produit et adore vous aider à trouver le bon.</p>
+          <div class="store-details">
+            <div><svg class="icon"><use href="#icon-pin"></use></svg><span><strong>24 rue des Fleurs</strong><small>69002 Lyon, France</small></span></div>
+            <div><svg class="icon"><use href="#icon-clock"></use></svg><span><strong>Du mardi au samedi</strong><small>10h–19h · dimanche 10h–13h</small></span></div>
+            <div><svg class="icon"><use href="#icon-phone"></use></svg><span><a href="tel:+33478000000">04 78 00 00 00</a><small>Un petit appel, un grand sourire</small></span></div>
+          </div>
+          <a class="button button-primary" href="#contact">Nous contacter <svg class="icon"><use href="#icon-arrow-right"></use></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7 : Avis clients -->
+    <section class="section reviews-section" id="avis" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-heading centered reveal"><div><p class="eyebrow">Ils sont repartis avec le sourire</p><h2 id="reviews-title">Vos petits bonheurs nous font plaisir.</h2></div></div>
+        <div class="reviews-grid">
+          <article class="review-card reveal"><div class="stars" aria-label="5 étoiles">★★★★★</div><blockquote>« J’ai trouvé un cadeau vraiment original et l’emballage était adorable. On sent que tout est choisi avec soin ! »</blockquote><div class="review-author"><span class="review-avatar avatar-coral">CM</span><div><strong>Claire M.</strong><small>Cliente depuis 2023</small></div><svg class="icon verified"><use href="#icon-check"></use></svg></div></article>
+          <article class="review-card reveal"><div class="stars" aria-label="5 étoiles">★★★★★</div><blockquote>« Livraison rapide, produits encore plus jolis en vrai et un petit mot dans le colis. Une boutique comme on les aime. »</blockquote><div class="review-author"><span class="review-avatar avatar-green">SL</span><div><strong>Sophie L.</strong><small>Achat vérifié</small></div><svg class="icon verified"><use href="#icon-check"></use></svg></div></article>
+          <article class="review-card reveal"><div class="stars" aria-label="5 étoiles">★★★★★</div><blockquote>« L’équipe m’a conseillée pour un cadeau et c’était parfait. De bons produits, des prix doux et beaucoup de gentillesse. »</blockquote><div class="review-author"><span class="review-avatar avatar-yellow">AD</span><div><strong>Antoine D.</strong><small>Achat vérifié</small></div><svg class="icon verified"><use href="#icon-check"></use></svg></div></article>
+        </div>
+        <div class="review-summary reveal"><span class="stars">★★★★★</span><strong>4,9/5</strong><span>sur 326 avis clients</span></div>
+      </div>
+    </section>
+
+    <!-- Section 8 : Coffrets cadeaux personnalisés -->
+    <section class="gift-banner">
+      <div class="container gift-banner-inner reveal">
+        <div class="gift-icon"><svg class="icon"><use href="#icon-gift"></use></svg></div>
+        <div><p class="eyebrow">Un cadeau, mais pas seulement</p><h2>Envie de faire plaisir sans se prendre la tête ?</h2><p>Dites-nous pour qui, à quelle occasion et votre budget : nous composons un joli cadeau rien que pour lui.</p></div>
+        <a class="button button-light" href="#contact" data-subject="Coffret cadeau personnalisé">Créer mon coffret <svg class="icon"><use href="#icon-arrow-right"></use></svg></a>
+      </div>
+    </section>
+
+    <!-- Section 9 : Questions fréquentes -->
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="faq-heading reveal"><p class="eyebrow">On vous répond simplement</p><h2 id="faq-title">Une petite question ?</h2><p>Vous ne trouvez pas votre réponse ? Écrivez-nous, on vous répond avec plaisir.</p><a class="text-link" href="#contact">Poser ma question <svg class="icon"><use href="#icon-arrow-right"></use></svg></a></div>
+        <div class="faq-list reveal">
+          <details><summary>Quels sont les délais de livraison ?<span><svg class="icon"><use href="#icon-plus"></use></svg></span></summary><p>Votre commande est préparée sous 1 à 2 jours ouvrés. Comptez ensuite 2 à 4 jours pour une livraison en France métropolitaine. La livraison est offerte dès 50 € d’achat.</p></details>
+          <details><summary>Puis-je retourner un article ?<span><svg class="icon"><use href="#icon-plus"></use></svg></span></summary><p>Bien sûr. Vous disposez de 30 jours après réception pour changer d’avis. L’article doit être non utilisé et dans son emballage d’origine.</p></details>
+          <details><summary>Proposez-vous le retrait en magasin ?<span><svg class="icon"><use href="#icon-plus"></use></svg></span></summary><p>Oui, et c’est gratuit. Choisissez « Retrait en magasin » lors de votre commande : nous vous prévenons dès que votre petit bonheur est prêt.</p></details>
+          <details><summary>Comment sont préparées les commandes ?<span><svg class="icon"><use href="#icon-plus"></use></svg></span></summary><p>Chaque commande est emballée à la main avec des matériaux recyclables. Pour un cadeau, ajoutez simplement un mot dans les notes de commande.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 10 : Inscription à la newsletter -->
+    <section class="newsletter-section" aria-labelledby="newsletter-title">
+      <div class="container newsletter-inner reveal">
+        <div><p class="eyebrow">Une dose de bonne humeur</p><h2 id="newsletter-title">Les nouveautés avant tout le monde.</h2><p>Et quelques petites attentions réservées à nos abonnés.</p></div>
+        <form class="newsletter-form" id="newsletter-form"><label class="sr-only" for="newsletter-email">Votre adresse e-mail</label><input id="newsletter-email" name="email" type="email" placeholder="Votre adresse e-mail" required><button class="button button-primary" type="submit">Je m’inscris <svg class="icon"><use href="#icon-arrow-right"></use></svg></button><p class="form-message" id="newsletter-message" aria-live="polite"></p></form>
+      </div>
+    </section>
+
+    <!-- Section 11 : Contact et formulaire -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal"><p class="eyebrow">On est là pour vous</p><h2 id="contact-title">Un projet, une envie, une question ?</h2><p>Écrivez-nous ! Une vraie personne vous répondra sous 2 jours ouvrés.</p><div class="contact-links"><a href="mailto:bonjour@lepetitbonheur.fr"><svg class="icon"><use href="#icon-mail"></use></svg> bonjour@lepetitbonheur.fr</a><a href="tel:+33478000000"><svg class="icon"><use href="#icon-phone"></use></svg> 04 78 00 00 00</a><span><svg class="icon"><use href="#icon-clock"></use></svg> Du mardi au samedi, 10h–19h</span></div><div class="contact-note"><svg class="icon"><use href="#icon-heart"></use></svg><span>Vos informations restent confidentielles et ne sont jamais revendues.</span></div></div>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-row"><label>Votre prénom<input type="text" name="name" placeholder="Camille" autocomplete="given-name" required></label><label>Votre e-mail<input type="email" name="email" placeholder="camille@email.fr" autocomplete="email" required></label></div>
+          <label>De quoi s’agit-il ?<select name="subject" id="contact-subject" required><option value="">Choisissez un sujet</option><option>Question sur un produit</option><option>Suivi de commande</option><option>Coffret cadeau personnalisé</option><option>Autre demande</option></select></label>
+          <label>Votre message<textarea name="message" rows="5" placeholder="Racontez-nous votre petite envie…" required></textarea></label>
+          <label class="checkbox-label"><input type="checkbox" required><span>J’accepte que mes informations soient utilisées pour répondre à ma demande.</span></label>
+          <button class="button button-primary" type="submit">Envoyer mon message <svg class="icon"><use href="#icon-arrow-right"></use></svg></button>
+          <p class="form-message" id="contact-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page : liens utiles et coordonnées -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand brand-footer" href="#accueil"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 7v6M24 35v6M7 24h6M35 24h6M12 12l4 4M32 32l4 4M36 12l-4 4M16 32l-4 4"/><circle cx="24" cy="24" r="9"/><path d="M20 25c2 3 6 3 8 0"/></svg></span><span class="brand-text">Le Petit <strong>Bonheur</strong><small>articles & jolies choses</small></span></a><p>De belles trouvailles pour les petits et grands bonheurs du quotidien.</p><div class="social-links"><a href="#contact" aria-label="Instagram"><svg class="icon"><use href="#icon-instagram"></use></svg></a><a href="#contact" aria-label="Facebook"><svg class="icon"><use href="#icon-facebook"></use></svg></a></div></div>
+      <div><h3>La boutique</h3><a href="#boutique">Tous les produits</a><a href="#categories">Nos univers</a><a href="#boutique" data-footer-filter="nouveautes">Nouveautés</a><a href="#contact" data-subject="Coffret cadeau personnalisé">Coffrets cadeaux</a></div>
+      <div><h3>Besoin d’aide ?</h3><a href="#faq">Livraison & retours</a><a href="#faq">Questions fréquentes</a><a href="#contact">Nous contacter</a><a href="#magasin">Venir en magasin</a></div>
+      <div><h3>Le magasin</h3><p>24 rue des Fleurs<br>69002 Lyon, France</p><p>Du mardi au samedi : 10h–19h<br>Dimanche : 10h–13h</p><a href="tel:+33478000000">04 78 00 00 00</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="current-year">2026</span> Le Petit Bonheur. Tous droits réservés.</span><div><a href="#faq">Mentions légales</a><a href="#faq">Confidentialité</a><span>Fait avec le cœur</span></div></div>
+  </footer>
+
+  <!-- Panier latéral : articles, quantités et récapitulatif -->
+  <dialog class="cart-drawer" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="cart-header"><div><p class="eyebrow">Vos jolies trouvailles</p><h2 id="cart-title">Mon panier</h2></div><button class="icon-button" type="button" aria-label="Fermer le panier" data-close-cart><svg class="icon"><use href="#icon-close"></use></svg></button></div>
+    <div class="cart-body" id="cart-items"></div>
+    <div class="cart-footer" id="cart-footer">
+      <div class="shipping-progress"><p id="shipping-message">Encore <strong>50,00 €</strong> pour la livraison offerte</p><span><i id="shipping-bar"></i></span></div>
+      <div class="cart-total"><span>Sous-total</span><strong id="cart-subtotal">0,00 €</strong></div>
+      <p class="cart-shipping-note">Livraison calculée à l’étape suivante. Taxes incluses.</p>
+      <button class="button button-primary button-full" type="button" id="checkout-button">Passer commande <svg class="icon"><use href="#icon-arrow-right"></use></svg></button>
+      <button class="continue-shopping" type="button" data-close-cart>Continuer mes achats</button>
+    </div>
+  </dialog>
+
+  <!-- Fenêtre de commande : coordonnées de livraison -->
+  <dialog class="checkout-dialog" id="checkout-dialog" aria-labelledby="checkout-title">
+    <button class="icon-button checkout-close" type="button" aria-label="Fermer" data-close-checkout><svg class="icon"><use href="#icon-close"></use></svg></button>
+    <p class="eyebrow">Dernière petite étape</p><h2 id="checkout-title">Où envoyons-nous vos bonheurs ?</h2><p class="checkout-intro">Cette boutique est une démonstration : aucune commande réelle ne sera débitée.</p>
+    <form class="checkout-form" id="checkout-form"><div class="form-row"><label>Prénom<input name="firstname" autocomplete="given-name" required></label><label>Nom<input name="lastname" autocomplete="family-name" required></label></div><label>E-mail<input name="email" type="email" autocomplete="email" required></label><label>Adresse<input name="address" autocomplete="street-address" required></label><div class="form-row"><label>Code postal<input name="postal" inputmode="numeric" pattern="[0-9]{5}" autocomplete="postal-code" required></label><label>Ville<input name="city" autocomplete="address-level2" required></label></div><div class="checkout-total"><span>Total de la démonstration</span><strong id="checkout-total">0,00 €</strong></div><button class="button button-primary button-full" type="submit">Confirmer ma commande <svg class="icon"><use href="#icon-check"></use></svg></button></form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><span class="toast-icon"><svg class="icon"><use href="#icon-check"></use></svg></span><span id="toast-message"></span></div>
+  <button class="back-to-top" type="button" aria-label="Revenir en haut de la page"><svg class="icon"><use href="#icon-arrow-right"></use></svg></button>
+</body>
+</html>
